@@ -142,10 +142,10 @@ html{
 
 
 /* All similar property */
-.about, .skills, .gallery, .contact, footer{
+.about, .skills, .gallery, .projectandworkshop, .contact, footer{
     font-family: 'Poppins', 'sans-serif';
 }
-.about .about-content, .skills .skills-content, .contact .contact-content{
+.about .about-content, .skills .skills-content, .projectandworkshop .projectandworkshop-content, .contact .contact-content{
     display: flex;
     flex-wrap: wrap;
     align-items: center;
@@ -301,6 +301,35 @@ section .title::after{
 }
 .skills-content .right .java::before{
     width: 40%;
+}
+
+/* Projects and Workshop Styling */
+.projectandworkshop .title::after{
+    content: "what I've done";
+}
+.projectandworkshop .projectandworkshop-content .column{
+    width: calc(50% - 30px);
+}
+.projectandworkshop .projectandworkshop-content .text{
+    font-size: 25px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: crimson;
+    text-align: center;
+    font-family: 'Ubuntu', 'sans-serif';
+}
+.projectandworkshop .projectandworkshop-content .left .p{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 10px;
+}
+.projectandworkshop .projectandworkshop-content .right .w{
+    font-size: 20px;
+    font-weight: 600;
+    margin-top: 85px;
+}
+.projectandworkshop .projectandworkshop-content .right .p{
+    color: crimson;
 }
 
 /* Gallery Section Styling */
@@ -539,7 +568,7 @@ footer span a:hover{
     .about .about-content .right{
         flex: 100%;
     }
-    .skills .skills-content .column, .contact .contact-content .column{
+    .skills .skills-content .column, .contact .contact-content .column, .projectandworkshop .projectandworkshop-content .column{
         width: 100%; 
         margin-bottom: 25px;
     }
